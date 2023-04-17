@@ -1,4 +1,9 @@
 <div class="dds__p-2">
-  <div>Primeiro componente utilizando DDS2 - Button</div>
-  <app-button></app-button>
+  <div class="dds__p-1">Primeiro componente utilizando DDS2 - Button</div>
+  <div class="dds__p-1">Color Testes</div>
+  <app-button class="dds__p-2" [childer] = "buttonDefault">Defaut</app-button>
+  <app-button class="dds__p-2" [childer] = "buttonDestructive" [teste] = "destructive">Destructive</app-button>
+  <app-button class="dds__p-2" [childer] = "buttonTransactional" [teste] = "transactional">Transactional</app-button>
+  <app-button class="dds__p-2" [childer] = "buttonEditorial" [teste] = "editorial">Editorial</app-button>
+  <app-button class="dds__p-2" [childer] = "buttonEditorialLight" [teste] = "editorialLight">Editorial Light</app-button>
 </div>
