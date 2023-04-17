@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'TryAngular';
+  show : boolean = false
+  title = 'TryAngular'
+
+  showMessage(): void{
+    this.show = !this.show
+  }
 
   // Button Childer
   buttonDefault = "Default"
