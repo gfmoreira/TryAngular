@@ -1,6 +1,6 @@
-<div class="dds__p-2 color-background">
-  <div class="dds__p-1">Primeiro componente utilizando DDS2 - Button</div>
-  <div class="dds__p-1">Color Testes</div>
+<div class="dds__p-2 box-options">
+  <div class="dds__p-1">Button Component With DDS2</div>
+  <div class="dds__p-1">Click for Test Button</div>
   <div>
     <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonDefault"></app-button>
     <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonDestructive" [teste] = "destructive"></app-button>
@@ -9,4 +9,8 @@
     <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonEditorialLight" [teste] = "editorialLight"></app-button>
   </div>
   <p  class="dds__p-2" *ngIf="show">Hide Massege</p>
+</div>
+<div class="dds__p-2 dds__mt-4 box-options">
+  <div class="dds__p-1">DropdownSimple Component With DDS2</div>
+  <app-dropdown></app-dropdown>
 </div>

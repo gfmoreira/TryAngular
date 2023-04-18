@@ -25,4 +25,5 @@ export class AppComponent {
   transactional = "dds__button--transactional"
   editorial = "dds__button--editorial"
   editorialLight = "dds__button--editorial-light"
+  
 }
