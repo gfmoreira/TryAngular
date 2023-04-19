@@ -4,7 +4,7 @@ Project started by me for Angular framework training :)
 
 ## Goals
 
-- Realizar a importação do DDS2 (Dell Design System 2.0) via CDN.
+- Import DDS2 (Dell Design System 2.0) via CDN.
 - Perform the creation of the components in Angular based on the import above.
 
 ## Components to create
