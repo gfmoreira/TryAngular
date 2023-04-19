@@ -18,27 +18,11 @@
     </div>
     <div id="simple-list-dropdown-popup" class="dds__dropdown__popup dds__dropdown__popup--hidden" role="presentation" tabindex="-1">
       <ul class="dds__dropdown__list" role="listbox" tabindex="-1" id="simple-list-dropdown-list">
-        <li class="dds__dropdown__item" role="none">
-          <button (click)="showMessage()" type="button" class="dds__dropdown__item-option" role="option" data-selected="false" data-value="1" tabindex="-1">
-            <span class="dds__dropdown__item-label">List option 1</span>
-          </button>
-        </li>
-        <li class="dds__dropdown__item" role="none">
+        <li *ngFor="let optionsDropdown of optionsDropdown" class="dds__dropdown__item" role="none">
           <button type="button" class="dds__dropdown__item-option" role="option" data-selected="false" data-value="2" tabindex="-1">
-            <span class="dds__dropdown__item-label">List option 2</span>
-          </button>
-        </li>
-        <li class="dds__dropdown__item" role="none">
-          <button type="button" class="dds__dropdown__item-option" role="option" data-selected="false" data-value="3" tabindex="-1">
-            <span class="dds__dropdown__item-label">List option 3</span>
-          </button>
-        </li>
-        <li class="dds__dropdown__item" role="none">
-          <button type="button" class="dds__dropdown__item-option" role="option" data-selected="false" data-value="4" tabindex="-1">
-            <span class="dds__dropdown__item-label">List option 4</span>
+            <span class="dds__dropdown__item-label">{{ optionsDropdown.name }}</span>
           </button>
         </li>
       </ul>
     </div>
-      <p  class="dds__p-2" *ngIf="show">You Selected the First Option</p>
   </div>
