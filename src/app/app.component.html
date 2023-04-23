@@ -2,15 +2,19 @@
   <div class="dds__p-1">Button Component With DDS2</div>
   <div class="dds__p-1">Click for Test Button</div>
   <div>
-    <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonDefault"></app-button>
-    <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonDestructive" [teste] = "destructive"></app-button>
-    <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonTransactional" [teste] = "transactional"></app-button>
-    <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonEditorial" [teste] = "editorial"></app-button>
-    <app-button (click)="showMessage()" class="dds__p-2" [childer] = "buttonEditorialLight" [teste] = "editorialLight"></app-button>
+    <app-button class="dds__p-2" [childer] = "buttonDefault"></app-button>
+    <app-button class="dds__p-2" [childer] = "buttonDestructive" [colorButton] = "destructive"></app-button>
+    <app-button class="dds__p-2" [childer] = "buttonTransactional" [colorButton] = "transactional"></app-button>
+    <app-button class="dds__p-2" [childer] = "buttonEditorial" [colorButton] = "editorial"></app-button>
+    <app-button class="dds__p-2" [childer] = "buttonEditorialLight" [colorButton] = "editorialLight"></app-button>
   </div>
-  <p  class="dds__p-2" *ngIf="show">Hide Massege</p>
 </div>
 <div class="dds__p-2 dds__mt-4 box-options">
   <div class="dds__p-1">DropdownSimple Component With DDS2</div>
-  <app-dropdown></app-dropdown>
+  <div class="dds__p-2">
+    <app-button (click)="setNewValueToDropdown()" class="dds__p-2" [childer] = "buttonChangeValue"></app-button>
+  </div>
+  <app-dropdown [label] = "labelDropdown" [optionsDropdown] = "optionsDropdown"></app-dropdown>
 </div>
+
+

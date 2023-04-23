@@ -6,14 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  show : boolean = false
   title = 'TryAngular'
+  labelDropdown = "Changing Dropdown Content After Clicking the Button"
 
-  showMessage(): void{
-    this.show = !this.show
+  setNewValueToDropdown(): void{
+    this.optionsDropdown = this.optionsButtonDefault
   }
 
+  optionsButtonDefault = [  
+    { id: 1, name: 'New Value 1' },  
+    { id: 2, name: 'New Value 2' },  
+    { id: 3, name: 'New Value 3' },  
+    ];  
+
+  optionsDropdown = [  
+    { id: 1, name: 'Options 1' },  
+  ];  
+
   // Button Childer
+  buttonChangeValue = "Change Dropdown Value"
   buttonDefault = "Default"
   buttonDestructive = "Destructive"
   buttonTransactional = "Transactional"

@@ -7,7 +7,7 @@ import { Component, OnInit, Input  } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   @Input() childer: string = ""
-  @Input() teste: string = ""
+  @Input() colorButton: string = ""
   constructor() { }
 
   ngOnInit(): void {}

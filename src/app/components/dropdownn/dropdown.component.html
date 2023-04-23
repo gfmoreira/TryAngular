@@ -1,6 +1,6 @@
 <div class="dds__dropdown" data-dds="dropdown" id="simple-list-dropdown" data-selection="single" data-select-all-label="Select all">
     <div class="dds__dropdown__input-container">
-      <label id="dropdown-label-578210048" for="dropdown-control-578210048" class="dds__label">Label</label>
+      <label id="dropdown-label-578210048" for="dropdown-control-578210048" class="dds__label">{{ label }}</label>
       <div class="dds__dropdown__input-wrapper" autocomplete="off" aria-haspopup="listbox" aria-controls="simple-list-dropdown-popup">
         <input
           id="simple-list-dropdown-input"
@@ -13,7 +13,7 @@
           aria-expanded="false"
           aria-controls="simple-list-dropdown-list"
         />
-        <small id="simple-list-dropdown-helper" class="dds__input-text__helper">Helper Text</small>
+        <small id="simple-list-dropdown-helper" class="dds__input-text__helper">{{ helper }}</small>
       </div>
     </div>
     <div id="simple-list-dropdown-popup" class="dds__dropdown__popup dds__dropdown__popup--hidden" role="presentation" tabindex="-1">
