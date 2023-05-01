@@ -1,3 +1,5 @@
+<center><b> *Warning: for the proper functioning of this repository, use the repository "TryNodeJs" API that I am creating in parallel to practice - https://github.com/gfmoreira/TryNodeJs* </b></center>
+
 # TryAngular
 
 Project started by me for Angular framework training :)
