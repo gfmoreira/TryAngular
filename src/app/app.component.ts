@@ -8,16 +8,27 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TryAngular'
   labelDropdown = "Changing Dropdown Content After Clicking the Button"
+  status: string = 'loading';
+  data!: any[];
+  
+  private url: string = 'http://localhost:8080/users';
 
   setNewValueToDropdown(): void{
-    this.optionsDropdown = this.optionsButtonDefault
+    this.optionsDropdown = this.data
   }
-
-  optionsButtonDefault = [  
-    { id: 1, name: 'New Value 1' },  
-    { id: 2, name: 'New Value 2' },  
-    { id: 3, name: 'New Value 3' },  
-    ];  
+  
+  async ngOnInit(): Promise<void>  {
+    fetch(await this.url)
+    .then((response) => response.json())
+    .then((quotesData) => {
+      this.status = 'ready';
+      this.data = quotesData.users;
+    })
+    .catch((error) => {
+      this.status = 'error';
+      console.error('There was an error!', error);
+    });
+  }
 
   optionsDropdown = [  
     { id: 1, name: 'Options 1' },  
